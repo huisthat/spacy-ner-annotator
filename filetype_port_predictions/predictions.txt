@@ -1,0 +1,59 @@
+
+
+TEXT: Emotet has utilized port 1010 to communicate with the servers while Zeus uses 2020 to communicate with the botnets.
+VALUE: port 1010
+LABEL: port
+
+TEXT: Yowai variant exploits port 1000, 6000 and 67
+VALUE: port 1000
+LABEL: port
+VALUE: 67
+LABEL: port
+
+TEXT: This Spacy model can extract port 33567 and 40421/tcp
+VALUE: port 33567
+LABEL: port
+VALUE: 40421
+LABEL: port
+
+TEXT: The new malware has been found to target port 100
+VALUE: port 100
+LABEL: port
+
+TEXT: According to researchers, Wicked bot now attacks ports 70 and 999
+VALUE: ports 70
+LABEL: port
+VALUE: 999
+LABEL: port
+
+TEXT: There was a spike in connections over port number 107
+
+TEXT: The port that has been most commonly used by the malware is 2000
+VALUE: 2000
+LABEL: port
+
+
+
+TEXT: The downloaded file will be a ZIP file containing the virus
+VALUE: ZIP
+LABEL: file type
+
+TEXT:  Both Zeus and Emotet will send emails containing .pdf and .doc files to lure victims to download it.
+VALUE: .pdf
+LABEL: file type
+VALUE: .doc
+LABEL: file type
+
+TEXT: Most of the file types are a portable executable file
+VALUE: executable
+LABEL: file type
+
+TEXT: Emails with PIF attachments from unknown sourcecs usually contain malicious documents that is harmful to the user
+VALUE: PIF
+LABEL: file type
+
+TEXT: PDF, DOC as well as ZIP files are common file types used by malwares which are attached to emails
+VALUE: PDF
+LABEL: file type
+VALUE: ZIP
+LABEL: file type
