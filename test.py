@@ -14,6 +14,8 @@ for text in TEST_DATA:
 
     for ent in doc.ents:
         value = ent.text
+        value = value.replace('ports ', '')
+        value = value.replace('port ', '')
         label = ent.label_
         print("VALUE:", value)
         print("LABEL:", label)

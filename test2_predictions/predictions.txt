@@ -1,13 +1,13 @@
 
 
 TEXT: Emotet has utilized port 1010 to communicate with the servers while Zeus uses 2020 to communicate with the botnets.
-VALUE: port 1010
+VALUE: 1010
 LABEL: port
 VALUE: 2020
 LABEL: port
 
 TEXT: Yowai variant exploits port 1000, 6000 and 67
-VALUE: port 1000
+VALUE: 1000
 LABEL: port
 VALUE: 6000
 LABEL: port
@@ -15,17 +15,17 @@ VALUE: 67
 LABEL: port
 
 TEXT: This Spacy model can extract port 33567 and 40421/tcp
-VALUE: port 33567
+VALUE: 33567
 LABEL: port
 VALUE: 40421
 LABEL: port
 
 TEXT: The new malware has been found to target port 100
-VALUE: port 100
+VALUE: 100
 LABEL: port
 
 TEXT: According to researchers, Wicked bot now attacks ports 70 and 999
-VALUE: ports 70
+VALUE: 70
 LABEL: port
 VALUE: 999
 LABEL: port
@@ -37,6 +37,7 @@ LABEL: port
 TEXT: The port that has been most commonly used by the malware is 2000
 VALUE: 2000
 LABEL: port
+
 
 
 
