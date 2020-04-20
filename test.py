@@ -1,9 +1,11 @@
 
 import spacy
 
+#change TEST_DATA to change data to test
 TEST_DATA = ['Emotet has utilized port 1010 to communicate with the servers while Zeus uses 2020 to communicate with the botnets.', 'Yowai variant exploits port 1000, 6000 and 67', 'This Spacy model can extract port 33567 and 40421/tcp', 'The new malware has been found to target port 100', 'According to researchers, Wicked bot now attacks ports 70 and 999', 'There was a spike in connections over port number 107', 'The port that has been most commonly used by the malware is 2000']
 
-output_dir = 'test2'
+#choose betweeen model1 and model2
+output_dir = 'model2'
 
 # test the saved model
 print("Loading from", output_dir)
@@ -14,12 +16,14 @@ for text in TEST_DATA:
 
     for ent in doc.ents:
         value = ent.text
-        value = value.replace('ports ', '')
+        #take out port and ports words from the prediction
+        value = value.replace('ports ', '') 
         value = value.replace('port ', '')
         label = ent.label_
         print("VALUE:", value)
         print("LABEL:", label)
     print()
+    
     # print("Entities", [(ent.text, ent.label_) for ent in doc.ents])
     # print("Tokens", [(t.text, t.ent_type_, t.ent_iob) for t in doc])
 
