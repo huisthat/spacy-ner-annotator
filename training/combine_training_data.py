@@ -1,6 +1,6 @@
 #combining training data in different files to the same file
 
-textfile = 'training_filenames.txt'
+textfile = 'training_filenames.txt' # file is a file with names of files of labelled data (old and new)
 
 with open(textfile, 'r', encoding='utf-8') as f:
     names = f.readlines()

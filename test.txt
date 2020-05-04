@@ -1,0 +1,48 @@
+We have spotted Mirai targeting port 2020 and 69
+Sometimes just mentioning the new target DGN2730 is enough.
+We can still identify if Miori now targets DGN2030 Netgear routers.
+Emotet has new targets like DGN3000 v3 routers
+Among the list of devices targeted by the Wicked Mirai are Netgear DGN1000 and DGN2200 v1 routers (also used by Reaper botnet).
+DGN1000 is a model Emotet targets, see if we can identify it
+If Mirai targets more Netgear routers, we can detect it
+Mirai targets a new PHP vulnerability discovered recently
+Emotet's RCE vulnerability is detectable
+Even in other formats like this: Yowai vairant exploits ports 80, 9999, 43 and 60008
+This Spacy model can extract port 33567 and 40421/tcp
+The new malware has been found to target port 22
+According to researchers, Wicked bot now attacks ports 80 and 9999
+The trojan Zeus is sending out email on port 25 from the workstation that's infected.
+This anomality was detected by a TCP/IP connection from <our external IP> on port 1992 going to an the sinkhole on port 80, which was by Zbot
+For POP3 data (port 110), the hook procedure records the user names and passwords of USER and PASS commands, and also examines buffers that are at least 12 characters in length for an initial AUTH PLAIN command. 
+For HTTP data (port 80), the hook procedure searches the entire sent buffer for the string \r\nAuthorization: Basic and, if found, extracts the data that follows, stopping at the next \r\n sequence or at the end of the buffer and then submitting the base-64-decoded data to the zbot server.
+The Zeus malware tells the browser to run traffic through TCP port 9050 and the stolen data will eventually land in an onion domain.
+The Mirai code was modified to include exploitation of another vulnerability, TR-06927, and used TCP port 7547.
+At the end of January 2017 our port metrics still showed significant scans for port 23 (Telnet), and while activity on ports 2323 and 7547 was still occurring, the volume was lower.
+Mukashi searches open TCP port 23 and uses combinations of default credentials to access other systems. The bot supports various commands, like Mirai, such as launching DDoS attacks.
+Mukashi binds to the TCP port 23448 in order to ensure only a single instance is running on the infected system.
+Wicked, a Mirai variant, scans ports 8080, 8443, 80 and 81 by initiating a raw socket SYN connection; if a connection is established, it will attempt to exploit the device and download its payload.
+Mirai malware that turns networked devices into remotely controlled bots has relaunched itself as Mukashi malware and has been actively exploiting Zyxel network-attached storage (NAS) devices’ vulnerability reported under CVE-2020-9054. 
+As soon as the proof-of-concept (PoC) for CVE-2020-9054 was made publicly available last month, this vulnerability was promptly abused to infect vulnerable versions of Zyxel network-attached storage (NAS) devices with a new Mirai variant – Mukashi.
+In February, Zyxel released security patches to address the CVE-2020-9054 critical remote code execution vulnerability by Mukashi that affects several NAS devices.
+The objective was to see how many IP addresses that are still vulnerable to CVE-2017-7577 have already been exploited by the Mirai botnet. 
+On 12 December 2017 researchers identified a variant of Mirai exploiting a zero-day flaw in Huawei HG532 routers to accelerate Mirai botnets infection, implementing two known SOAP related exploits on routers web interface, CVE-2014–8361 and CVE-2017–17215.
+Among the list of devices targeted by the Wicked Mirai are Netgear DGN1000 and DGN2200 v1 routers (also used by Reaper botnet).
+The exploit to be used depends on the specific port the bot was able to connect to. Specifically, port 8080 brings an exploit for a flaw in Netgear DGN1000 and DGN2200 v1 routers (also used by the Reaper botnet).
+The used exploit depends on the specific port that the connection was established to. On port 8080, the malware uses Netgear DGN1000 and DGN2200 v1 router exploits (also used by Reaper botnet).
+While the original version of Mirai used brute force techniques to compromise devices, Wicked relies on known exploits — used depending on the port the bot is connected to. If connected to Port 8080, the malware will use a remote code execution (RCE) Netgear exploit which works on DGN1000 and DGN2200 v1 routers, and is the same tool used by the Reaper botnet to compromise target machines.
+Once the connection is made, attempts are made to exploit vulnerabilities to download the malicious payload by writing exploit strings to the socket. Different exploits are used depending on the port where the connection was established. On port 8080, Netgear DGN1000 and DGN2200 v1 router exploits are used, a CCTV-DVR remote code execution exploit is used on port 81,
+The experts discovered that the exploit to be used depends on the specific port the bot was able to connect to. Below is a list of devices targeted by the Wicked Mirai; Port 8080: Netgear DGN1000 and DGN2200 v1 routers.
+Devices Targeted by Wicked include Netgear DGN1000 and DGN2200 v1 routers on Port 8080.
+Appropriately dubbed “Wicked,” the variant relies on known exploits, as opposed to the previous version which used brute force techniques to compromise devices. When connected to Port 8080, the malware uses a remote code execution (RCE) Netgear exploit which works on DGN1000 and DGN2200 v1 routers.
+Emotet has utilized port 1010 to communicate with the servers while Zeus uses 2020 to communicate with the botnets.
+Yowai variant exploits port 1000, 6000 and 67
+This Spacy model can extract port 33567 and 40421/tcp
+The new malware has been found to target port 100
+According to researchers, Wicked bot now attacks ports 70 and 999
+There was a spike in connections over port number 107
+The port that has been most commonly used by the malware is 2000
+The downloaded file will be a ZIP file containing the virus
+Both Zeus and Emotet will send emails containing .pdf and .doc files to lure victims to download it.
+Most of the file types are a portable executable file
+Emails with PIF attachments from unknown sourcecs usually contain malicious documents that is harmful to the user
+PDF, DOC as well as ZIP files are common file types used by malwares which are attached to emails
