@@ -24,6 +24,8 @@ for text in stripped:
         #take out port and ports words from the prediction
         value = value.replace('ports ', '') 
         value = value.replace('port ', '')
+        value = value.replace('Port ', '')
+        value = value.replace('Ports ', '')
         label = ent.label_
         print(f"LABEL: {label} | VALUE: {value}")
         # print("VALUE:", value)
