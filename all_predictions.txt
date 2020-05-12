@@ -8,7 +8,7 @@ TEXT: Sometimes just mentioning the new target DGN2730 is enough.
 
 -------------------3--------------------
 TEXT: We can still identify if Miori now targets DGN2030 Netgear routers.
-LABEL: Model | VALUE: Netgear routers
+LABEL: Port | VALUE: DGN2030 Netgear routers.
 
 -------------------4--------------------
 TEXT: Emotet has new targets like DGN3000 v3 routers
@@ -25,10 +25,11 @@ TEXT: DGN1000 is a model Emotet targets, see if we can identify it
 
 -------------------7--------------------
 TEXT: If Mirai targets more Netgear routers, we can detect it
+LABEL: File Type | VALUE: Netgear
 
 -------------------8--------------------
 TEXT: Mirai targets a new PHP vulnerability discovered recently
-LABEL: File Type | VALUE: PHP
+LABEL: Model | VALUE: PHP
 
 -------------------9--------------------
 TEXT: Emotet's RCE vulnerability is detectable
@@ -51,6 +52,7 @@ LABEL: Port | VALUE: 22
 
 -------------------13--------------------
 TEXT: According to researchers, Wicked bot now attacks ports 80 and 9999
+LABEL: Port | VALUE: 80
 LABEL: Port | VALUE: 9999
 
 -------------------14--------------------
@@ -119,32 +121,33 @@ TEXT: Mirai malware that turns networked devices into remotely controlled bots h
 relaunched itself as Mukashi malware and has been actively exploiting Zyxel
 network-attached storage (NAS) devices’ vulnerability reported under
 CVE-2020-9054.
-LABEL: Port | VALUE: 9054
+LABEL: Port | VALUE: -9054
 
 -------------------25--------------------
 TEXT: As soon as the proof-of-concept (PoC) for CVE-2020-9054 was made publicly
 available last month, this vulnerability was promptly abused to infect
 vulnerable versions of Zyxel network-attached storage (NAS) devices with a new
 Mirai variant – Mukashi.
-LABEL: Port | VALUE: 9054
+LABEL: Port | VALUE: -9054
 
 -------------------26--------------------
 TEXT: In February, Zyxel released security patches to address the CVE-2020-9054
 critical remote code execution vulnerability by Mukashi that affects several NAS
 devices.
-LABEL: Port | VALUE: 9054
+LABEL: Port | VALUE: -9054
 LABEL: SV | VALUE: remote code execution
 
 -------------------27--------------------
 TEXT: The objective was to see how many IP addresses that are still vulnerable to
 CVE-2017-7577 have already been exploited by the Mirai botnet.
-LABEL: Port | VALUE: 7577
+LABEL: Port | VALUE: -7577
 
 -------------------28--------------------
 TEXT: On 12 December 2017 researchers identified a variant of Mirai exploiting a zero-
 day flaw in Huawei HG532 routers to accelerate Mirai botnets infection,
 implementing two known SOAP related exploits on routers web interface,
 CVE-2014–8361 and CVE-2017–17215.
+LABEL: File Type | VALUE: zero
 
 -------------------29--------------------
 TEXT: Among the list of devices targeted by the Wicked Mirai are Netgear DGN1000 and
@@ -172,10 +175,9 @@ devices, Wicked relies on known exploits — used depending on the port the bot 
 connected to. If connected to Port 8080, the malware will use a remote code
 execution (RCE) Netgear exploit which works on DGN1000 and DGN2200 v1 routers,
 and is the same tool used by the Reaper botnet to compromise target machines.
-LABEL: Port | VALUE: Port 8080
-LABEL: SV | VALUE: remote code execution (
-LABEL: Model | VALUE: RCE
-LABEL: Model | VALUE: DGN1000
+LABEL: Port | VALUE: 8080
+LABEL: SV | VALUE: remote code execution (RCE)
+LABEL: File Type | VALUE: DGN1000
 LABEL: Model | VALUE: DGN2200 v1 routers
 
 -------------------33--------------------
@@ -184,15 +186,17 @@ download the malicious payload by writing exploit strings to the socket.
 Different exploits are used depending on the port where the connection was
 established. On port 8080, Netgear DGN1000 and DGN2200 v1 router exploits are
 used, a CCTV-DVR remote code execution exploit is used on port 81,
+LABEL: Port | VALUE: 8080
 LABEL: Model | VALUE: Netgear DGN1000
 LABEL: Model | VALUE: DGN2200 v1 router
+LABEL: SV | VALUE: remote code execution
 LABEL: Port | VALUE: 81
 
 -------------------34--------------------
 TEXT: The experts discovered that the exploit to be used depends on the specific port
 the bot was able to connect to. Below is a list of devices targeted by the
 Wicked Mirai; Port 8080: Netgear DGN1000 and DGN2200 v1 routers.
-LABEL: Port | VALUE: Port 8080
+LABEL: Port | VALUE: 8080
 LABEL: Model | VALUE: Netgear DGN1000
 LABEL: Model | VALUE: DGN2200 v1 routers
 
@@ -201,29 +205,26 @@ TEXT: Devices Targeted by Wicked include Netgear DGN1000 and DGN2200 v1 routers 
 Port 8080.
 LABEL: Model | VALUE: Netgear DGN1000
 LABEL: Model | VALUE: DGN2200 v1 routers
-LABEL: Port | VALUE: Port 8080
+LABEL: Port | VALUE: 8080
 
 -------------------36--------------------
 TEXT: Appropriately dubbed “Wicked,” the variant relies on known exploits, as opposed
 to the previous version which used brute force techniques to compromise devices.
 When connected to Port 8080, the malware uses a remote code execution (RCE)
 Netgear exploit which works on DGN1000 and DGN2200 v1 routers.
-LABEL: Port | VALUE: Port 8080
-LABEL: SV | VALUE: remote code execution (
-LABEL: Model | VALUE: RCE
-LABEL: Model | VALUE: DGN1000
+LABEL: Port | VALUE: 8080
+LABEL: SV | VALUE: remote code execution (RCE)
+LABEL: File Type | VALUE: DGN1000
 LABEL: Model | VALUE: DGN2200 v1 routers
 
 -------------------37--------------------
 TEXT: Emotet has utilized port 1010 to communicate with the servers while Zeus uses
 2020 to communicate with the botnets.
 LABEL: Port | VALUE: 1010
-LABEL: Port | VALUE: 2020
 
 -------------------38--------------------
 TEXT: Yowai variant exploits port 1000, 6000 and 67
 LABEL: Port | VALUE: 1000
-LABEL: Port | VALUE: 6000
 LABEL: Port | VALUE: 67
 
 -------------------39--------------------
@@ -233,6 +234,7 @@ LABEL: Port | VALUE: 40421
 
 -------------------40--------------------
 TEXT: The new malware has been found to target port 100
+LABEL: Port | VALUE: 100
 
 -------------------41--------------------
 TEXT: According to researchers, Wicked bot now attacks ports 70 and 999
@@ -258,6 +260,7 @@ LABEL: File Type | VALUE: .doc
 
 -------------------46--------------------
 TEXT: Most of the file types are a portable executable file
+LABEL: Port | VALUE: portable executable
 
 -------------------47--------------------
 TEXT: Emails with PIF attachments from unknown sourcecs usually contain malicious
@@ -269,3 +272,4 @@ TEXT: PDF, DOC as well as ZIP files are common file types used by malwares which
 attached to emails
 LABEL: File Type | VALUE: PDF
 LABEL: File Type | VALUE: ZIP
+
