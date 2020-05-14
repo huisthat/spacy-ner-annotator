@@ -8,7 +8,7 @@ with open('test.txt', 'r') as f:
     [stripped.append(s.rstrip()) for s in sentences]
 
 # Load and test the saved model
-output_dir = 'model 2'
+output_dir = 'model 1'
 print("Loading from", output_dir)
 nlp2 = spacy.load(output_dir)
 
